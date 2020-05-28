@@ -1,0 +1,19 @@
+#FREQUENCY OF CHARACTERS IN DECREASING ORDER
+import operator
+def most_frequent( ):
+     a=input("enter a string:")
+     print(a)
+     d=dict( )
+     for char in a:
+         if char in d:
+             d[char]+=1
+         else:
+            d[char]=1
+    
+     print("{0} :{1}".format(a,str(d)))
+     
+most_frequent( )
+OUTPUT:
+enter a string:strawberry
+strawberry
+strawberry :{'s': 1, 't': 1, 'r': 3, 'a': 1, 'w': 1, 'b': 1, 'e': 1, 'y': 1}
